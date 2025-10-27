@@ -1,9 +1,22 @@
-h1 {
+header {
 	background-color: SlateBlue;
 	color: White;
 	border: 2px solid Violet;
 	border-radius: 5px
 }
+
+nav ul {
+ 
+        list-style: none;
+ 
+    }
+nav li {
+ 
+        display: inline-block;
+ 
+        margin-left: 100px;
+ 
+    }
 p {
 	background-color: Violet;
 	color: SlateBlue;
