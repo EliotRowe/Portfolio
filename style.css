@@ -1,13 +1,103 @@
+* {
+        box-sizing: border-box;
+}
 
-nav ul {
- 
-        list-style: none;
- 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem 2rem;
+    border-bottom: 2px solid #ddd;
+    background-color: #f9fafb;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.subtitle {
+    margin-top: 0.25rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.header-right {
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+.header-right a {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
     }
-nav li {
- 
-        display: inline-block;
- 
-        margin-left: 50px;
- 
+    .header-right {
+      text-align: left;
+      margin-top: 1rem;
     }
+}
+
+
+body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+}
+.row {
+  margin: 8px -16px;
+}
+.row,
+.row > .col {
+  padding: 8px;
+}
+
+.col {
+        float: left;
+        width: 25%;       
+}
+
+a.tile_btn {
+        text-decoration: none;
+}
+.project_tile {
+        background-color: white;
+        padding: 10px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .col {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+  }
+}
