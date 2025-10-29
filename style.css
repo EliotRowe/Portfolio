@@ -3,21 +3,26 @@
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px 0px;
-    border-bottom: 2px solid #ddd;
-    background-color: #f1f1f1;
+        position:sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 0px;
+        padding: 4px;
+        padding-top: 16px;
+        border-bottom: 2px solid #ddd;
+        background-color: #f1f1f1;
+
 }
 
 
 
 .header-left {
-    flex: 1;
-    padding: 0px;
-    margin: 0px;
-    margin-right: 10px;
+        flex: 1;
+        padding: 0px;
+        margin: 0px;
+        margin-right: 10px;
 }
 
 .title {
