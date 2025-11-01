@@ -116,4 +116,43 @@ body {
   .header-right {
         font-size: 12px;
   }
+  .row2 {
+        flex-direction: column;
+  }
+  .row2rev {
+        flex-direction: column-reverse;
+  }
 }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slide {
+        max-width: 100%;
+        display: none;
+}
+
+.row2, .row2rev {
+        display: flex;
+        align-items: stretch;
+}
+
+.col2 {
+        flex: 1;
+        disply: flex;
+
+        align-content: center;
+        padding: 16px;
+}
+
