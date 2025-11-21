@@ -7,7 +7,7 @@ header {
         top: 0px;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: stretch;
         margin-top: 0px;
         padding: 4px;
         padding-top: 16px;
@@ -47,8 +47,8 @@ header {
     font-size: 16px;
     color: #555555;
     margin-left: 10px;
-
 }
+
 
 .header-right a {
     color: #555555; 
@@ -147,9 +147,13 @@ body {
         align-content: center;
         padding: 4px;
         margin-right: 8px;
-        font-size: 2vw;
-
+        font-size: 24px;
+        color: #555555;
 } 
+.home_btn:hover {
+color: #222222;
+}
+
 @media screen and (max-width: 900px) {
   .title {
         font-size: 24px;
