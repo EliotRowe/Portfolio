@@ -141,7 +141,6 @@ body {
         padding: 16px;
 }
 .home_btn {
-        border-style: solid;
         border-radius: 4px;
         text-align: center;
         align-content: center;
@@ -151,7 +150,7 @@ body {
         color: #555555;
 } 
 .home_btn:hover {
-color: #222222;
+        color: #222222;
 }
 
 @media screen and (max-width: 900px) {
