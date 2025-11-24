@@ -94,6 +94,7 @@ body {
         background-color: white;
         padding: 10px;
         height: 100%;
+        border-radius: 16px;
 
 }
 
@@ -153,6 +154,16 @@ body {
         color: #222222;
 }
 
+img {
+        border-style: solid;
+        border-radius: 16px;
+}
+
+.col2 li {
+        padding-bottom: 12px;
+        font-size: 1.5vw;
+}
+
 @media screen and (max-width: 900px) {
   .title {
         font-size: 24px;
@@ -185,5 +196,9 @@ body {
   }
   .row2rev {
         flex-direction: column-reverse;
+  }
+  .col2 li {
+        font-size: 14px;
+        padding-bottom: 6px;
   }
 }
