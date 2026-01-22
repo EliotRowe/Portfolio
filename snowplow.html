@@ -19,8 +19,8 @@
 	<div class="header-left">
 		
 		<div class="title_blk">
-			<h1 class="title">Snowplow Obsticle Avoidance</h1>
-			<p class="subtitle">Obsticle avoidance algorithm maximizing adhearance to a straight line path.</p>
+			<h1 class="title">Snowplow Obstacle Avoidance</h1>
+			<p class="subtitle">Obstacle avoidance algorithm maximizing adhearance to a straight line path.</p>
 		</div>
 	</div>
 
@@ -43,11 +43,11 @@
 </div>
 	<div class="col2">
 		<ul>
-			<li>The algorithm takes a list of target waypoints in order and a costmap of the area as inputs.</li>
-			<li>First the linear path between each waypoint and the next is searched for costs higher than a specific threshold.</li>
-			<li>The first and last coordinates along the path above the threshold are marked as the front and back edges of the obsticle.</li>
-			<li>Starting from the midpoint of these edges, the map is searched in a perpendicular line for a third point on the bondary of the obsticle.</li>
-			<li>Specifying the direction of this search allows the algorithm to always create turns in the same direction.</li>
+			<li>Algorithm takes as inputs a list of target waypoints in order and a costmap of the area.</li>
+			<li>Linear path between each waypoint and next is searched for costs higher than a specific threshold.</li>
+			<li>First and last coordinates along the path above the threshold are marked as the front and back edges of obstacle.</li>
+			<li>Starting from midpoint of these edges, map is searched in a perpendicular line for a third point on boundary of the obstacle.</li>
+			<li>Specifying direction of this search allows algorithm to always create turns in the same direction.</li>
 		</ul>
 	</div>
 </div>
@@ -57,9 +57,9 @@
 <div class="col2">
 	<ul >
 		<li>Once the third point is found, the midpoint between it and each initial edge is calculated.</li>
-		<li>From these midpoints, the map is searched in a perpendicular line to find more points on the edge of the obsticle.</li>
-		<li>This process is repeated recursively until the found point is close to the midpoint where there search started.</li>
-		<li>This method allows the algorithm to follow the edge of complex obsticles, without having to calculate the overall shape of the obsticle.</li>
+		<li>From these midpoints, the map is searched in a perpendicular line to find more points on edge of the obstacle.</li>
+		<li>Process is repeated recursively until the found point is close to the midpoint where there search started.</li>
+		<li>Method allows the algorithm to follow the edge of complex obstacles, without having to determine the overall shape of the obstacle.</li>
 	</ul>
 </div>
 
@@ -78,12 +78,12 @@
 
 <div class="col2">
 	<ul>
-		<li>Algorithm was implemented in OTTO, CWRU's 1st place robot in the 2025 Ion Autonomous snowplow competition.</li>
-		<li>This minimized OTTO's deviation from its predetermined plowing strategy and allowed it to clear more than 95% of the snow from the competition area.</li>
-		<li>Solved an issue observed with cost minimazation algorithms where the robot would gradually move around the obsticle, minimizing distance traveled but leaving a section of uncleared snow. </li>
+		<li>Algorithm was implemented in OTTO, CWRU's Competition snowplow Robot, which placed first in the 2025 Ion Autonomous snowplow competition.</li>
+		<li>Robust Algorithm minimized OTTO's deviation from its predetermined plowing strategy and allowed it to clear more than 95% of the snow from the competition area.</li>
+		<li>Solved an issue observed with cost minimization algorithms where the robot would gradually move around the obstacle, minimizing distance traveled but leaving a section of uncleared snow. </li>
 	</ul>	
 </div>
 <div class="col2">
-	<img style="width: 100%;" src="snowplow/otto_avoids_obsticle.gif"></img>
+	<img style="width: 100%;" src="snowplow/otto_avoids_obstacle.gif"></img>
 	
 </div>
