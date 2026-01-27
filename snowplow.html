@@ -47,7 +47,7 @@
 		</ul>
 		<ol>
 			<li>Linear path between each waypoint and next is searched for costs higher than a specific threshold.</li>
-			<li>First and last coordinates along the path above the threshold are marked as the front and back edges of obstacle.</li>
+			<li>First and last coordinates along the path above the threshold are marked as the front and back edges of the obstacle.</li>
 			<li>Starting from midpoint of these edges, map is searched in a perpendicular line for a third point on boundary of the obstacle.</li>
 			
 		</ol>
@@ -57,14 +57,14 @@
 <div class="row2rev">
 
 <div class="col2">
-	<ol>
+	<ol start="4">
 		<li>Once the third point is found, the midpoint between it and each initial edge is calculated.</li>
 		<li>From these midpoints, the map is searched in a perpendicular line to find more points on edge of the obstacle.</li>
 		<li>Process is repeated recursively until the found point is close to the midpoint where there search started.</li>
 	</ol>
 	<ul>	
-		<li>Specifying direction of this search allows algorithm to always create turns in the same direction.</li>
-		<li>Method allows the algorithm to follow the edge of complex obstacles, without having to determine the overall shape of the obstacle.</li>
+		<li>Method allowed the algorithm to follow the edge of complex obstacles, without having to determine the overall shape of the obstacle.</li>
+		<li>Specifying direction of perpendicular search allowed algorithm to always create turns in the same direction, beneficial for angled plow.</li>
 	</ul>
 </div>
 
