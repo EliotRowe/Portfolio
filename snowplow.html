@@ -45,7 +45,7 @@
 		<ul>
 			<li>Algorithm inputs included a list of target waypoints in order and a costmap of the area.</li>
 			<li>Methodology:
-				<ol>
+				<ol style="padding-top: 10px;">
 					<li>Linear path between each waypoint and next is searched for costs higher than a specific threshold.</li>
 					<li>First and last coordinates along the path above the threshold are marked as the front and back edges of the obstacle.</li>
 					<li>Starting from midpoint of these edges, map is searched in a perpendicular line for a third point on boundary of the obstacle.</li>
@@ -59,12 +59,15 @@
 <div class="row2rev">
 
 <div class="col2">
-	<ol start="4">
-		<li>Once the third point is found, the midpoint between it and each initial edge is calculated.</li>
-		<li>From these midpoints, the map is searched in a perpendicular line to find more points on edge of the obstacle.</li>
-		<li>Process is repeated recursively until the found point is close to the midpoint where there search started.</li>
-	</ol>
-	<ul>	
+	
+	<ul>
+		<li>Methodology cont.
+			<ol start="4" style="padding-top: 10px;">
+				<li>Once the third point is found, the midpoint between it and each initial edge is calculated.</li>
+				<li>From these midpoints, the map is searched in a perpendicular line to find more points on edge of the obstacle.</li>
+				<li>Process is repeated recursively until the found point is close to the midpoint where there search started.</li>
+			</ol>
+		</li>
 		<li>Method allowed the algorithm to follow the edge of complex obstacles, without having to determine the overall shape of the obstacle</li>
 		<li>Specifying direction of perpendicular search allowed algorithm to always create turns in the same direction, beneficial for angled plow</li>
 	</ul>
