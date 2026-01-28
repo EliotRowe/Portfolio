@@ -166,7 +166,7 @@ img {
         font-size: 1.5vw;
 }
 .thesis-p {
-        font-size: 1.5vw;
+        font-size: 24px
 }
 
 
@@ -180,6 +180,11 @@ img {
   .header-right {
         font-size: 14px;
   }
+
+  .thesis-p {
+        font-size: 16px
+}
+
 }
 @media screen and (max-width: 600px) {
   .col {
@@ -207,4 +212,8 @@ img {
         font-size: 14px;
         padding-bottom: 6px;
   }
+  .thesis-p {
+        font-size: 12px
+}
+
 }
