@@ -98,6 +98,10 @@ body {
 
 }
 
+.project_tile:hover {
+        border-style: solid;
+}
+
 .row:after {
   content: "";
   display: table;
