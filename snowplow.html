@@ -20,7 +20,7 @@
 		
 		<div class="title_blk">
 			<h1 class="title">Robot Snowplow - Obstacle Avoidance</h1>
-			<p class="subtitle">Created an obstacle avoidance algorithm for an autonomous snowplow maximizing adhearance to a straight line path</p>
+			<p class="subtitle">Created an obstacle avoidance algorithm for an autonomous snowplow maximizing adherence to a straight line path</p>
 		</div>
 	</div>
 
@@ -35,7 +35,7 @@
 </header>
 
 
-<h2>The Algorithm</h2>
+<h2>Algorithm</h2>
 <hr>
 <div class="row2">
 <div class="col2">
@@ -44,13 +44,15 @@
 	<div class="col2">
 		<ul>
 			<li>Algorithm inputs include a list of target waypoints in order and a costmap of the area.</li>
+			<li>Methodology:
+				<ol>
+					<li>Linear path between each waypoint and next is searched for costs higher than a specific threshold.</li>
+					<li>First and last coordinates along the path above the threshold are marked as the front and back edges of the obstacle.</li>
+					<li>Starting from midpoint of these edges, map is searched in a perpendicular line for a third point on boundary of the obstacle.</li>
+				</ol>
+			</li>
 		</ul>
-		<ol>
-			<li>Linear path between each waypoint and next is searched for costs higher than a specific threshold.</li>
-			<li>First and last coordinates along the path above the threshold are marked as the front and back edges of the obstacle.</li>
-			<li>Starting from midpoint of these edges, map is searched in a perpendicular line for a third point on boundary of the obstacle.</li>
-			
-		</ol>
+		
 	</div>
 </div>
 
